@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 
-# Initial code for SI 601 F15 Hoemwork 4 Part 2
+"""
+Google Distance Matrix API calls
+Finds approximate commutes from Massachusetts cities into Boston, arrive by 8 a.m.
+Data then imported directly into SQLite database
+"""
 
 from urllib2 import Request, urlopen, URLError
 import json 
@@ -11,8 +15,10 @@ TOWNS_MA=['Abington','Acton','Acushnet','Adams','Agawam','Alford','Amesbury','Am
 
 #Google Distance Matrix API: https://developers.google.com/maps/documentation/distance-matrix/start?refresh=1&authuser=0
 
+#this list will hold all the row information about places, used on INSERT to SQLite db
 table_rows=[]
 
+#loop to determine commutes from different towns in Massachusetts to Boston
 for TOWN in TOWNS_MA:
     TOWN=TOWN.replace(' ','+') #spaces don't work here for the google API
 
@@ -21,12 +27,14 @@ for TOWN in TOWNS_MA:
     request_transit = Request('https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins='+TOWN+',MA&destinations=1325+Boylston+Street,Boston,MA&mode=transit&arrival_time=1508155200&key=AIzaSyDUSjSJ4gqbo2Ymhooebqm5cfDUr_zOXz8')
 
     try:
+        #there are two different API calls, one by car and another by public transit
         response_car = urlopen(request_car)
         distance_car = json.load(response_car)
 
         response_transit = urlopen(request_transit)
         distance_transit = json.load(response_transit)
         
+        #try assigning variables based on API's JSON response to car commute
         try:
             city = TOWN 
             car_time_text = distance_car['rows'][0]['elements'][0]['duration']['text']
@@ -41,7 +49,7 @@ for TOWN in TOWNS_MA:
             car_dis_meters= 969969
             car_status='N/A'
 
-
+        #try assigning variables based on API's JSON response to public transit commute
         try:
             transit_time_text = distance_transit['rows'][0]['elements'][0]['duration']['text']
             transit_time_sec = distance_transit['rows'][0]['elements'][0]['duration']['value']
@@ -55,11 +63,14 @@ for TOWN in TOWNS_MA:
             transit_dis_meters= 969969
             transit_status='N/A'
 
+        #create a list of the variables, which will then be inserted into list of lists
         table_row= [city,car_time_text,car_time_sec,car_dis_text,car_dis_meters,car_status,transit_time_text,transit_time_sec,transit_dis_text,transit_dis_meters,transit_status]
         table_rows.append(table_row)
 
+        #logging
         print city,car_time_text,car_time_sec,car_dis_text,car_dis_meters,car_status,transit_time_text,transit_time_sec,transit_dis_text,transit_dis_meters,transit_status
 
+    #occurs if the API fails out
     except URLError, e:
         print 'No kittez. Got an error code:', e
         city=TOWN
@@ -75,13 +86,16 @@ for TOWN in TOWNS_MA:
         transit_status='N/A'
         table_row= [city,car_time_text,car_time_sec,car_dis_text,car_dis_meters,car_status,transit_time_text,transit_time_sec,transit_dis_text,transit_dis_meters,transit_status]
         table_rows.append(table_row)
+        print city+' failed to generate distance matrix info' #untested logging
 
 
 
-#print table_rows
+#print table_rows #see all data
 
-with sqlite.connect('yelp_database.db') as con: 
+#Connect to SQLite database and insert data from Google API
+with sqlite.connect('NextHome_database.db') as con: 
     cur = con.cursor()
+    #the next two lines force a destructive refresh. Can be commented out if undesired.
     cur.execute("DROP TABLE IF EXISTS travel_times")
     cur.execute("CREATE TABLE travel_times(city TEXT,car_time_text TEXT,car_time_sec REAL,car_dis_text TEXT,car_dis_meters REAL,car_status TEXT ,transit_time_text TEXT,transit_time_sec REAL ,transit_dis_text TEXT ,transit_dis_meters REAL ,transit_status TEXT )")
     cur.executemany( "INSERT INTO travel_times (city,car_time_text,car_time_sec,car_dis_text,car_dis_meters,car_status,transit_time_text,transit_time_sec,transit_dis_text,transit_dis_meters,transit_status) VALUES (?,?,?,?,?,?,?,?,?,?,?)", table_rows)
