@@ -33,3 +33,5 @@ Specifically, we've used the following files to pull information `python yelp_ap
 Then to get into SQLite database use `python yelptosql.py`.
 
 ## Gathering from Google Distance Matrix API
+The first API calls we made were to determine how long morning commutes would be, via the Distance Matrix API. Just run `python Google_Distance_Matrix_API.py` to compile for all towns in MA against the target destination (Boston) to arrive by 8 a.m. It would definitely be possible to generalize the code and accept command-line inputs.
+
