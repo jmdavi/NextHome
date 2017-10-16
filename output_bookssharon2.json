@@ -1,0 +1,774 @@
+
+  {
+    "rating": 4.5,
+    "review_count": 56,
+    "name": "An Unlikely Story",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/an-unlikely-story-plainville?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 17204.51569478,
+    "coordinates": {
+      "latitude": 42.0042454,
+      "longitude": -71.3354795
+    },
+    "phone": "+15086990244",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/PIY4uCaVSW6DgbTbG4nF2Q/o.jpg",
+    "categories": [
+      {
+        "alias": "coffee",
+        "title": "Coffee & Tea"
+      },
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(508) 699-0244",
+    "id": "an-unlikely-story-plainville",
+    "is_closed": false,
+    "location": {
+      "city": "Plainville",
+      "display_address": [
+        "111 South St",
+        "Plainville, MA 02762"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "111 South St",
+      "zip_code": "02762"
+    }
+  },
+  {
+    "rating": 4,
+    "review_count": 14,
+    "name": "Barnes & Noble Booksellers",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/barnes-and-noble-booksellers-east-walpole?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 4437.801398991999,
+    "coordinates": {
+      "latitude": 42.1552237131695,
+      "longitude": -71.2016207283115
+    },
+    "phone": "+15086681303",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xw2A_k5LWnO3ENLvPWecRg/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(508) 668-1303",
+    "id": "barnes-and-noble-booksellers-east-walpole",
+    "is_closed": false,
+    "location": {
+      "city": "East Walpole",
+      "display_address": [
+        "82 Providence Hwy",
+        "East Walpole, MA 02032"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "82 Providence Hwy",
+      "zip_code": "02032"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 110,
+    "name": "Brattle Book Shop",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/brattle-book-shop-boston?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$",
+    "distance": 28594.022479639996,
+    "coordinates": {
+      "latitude": 42.35468,
+      "longitude": -71.0620299
+    },
+    "phone": "+16175420210",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rMjCMcc3DE0loTx-Ukv2DA/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(617) 542-0210",
+    "id": "brattle-book-shop-boston",
+    "is_closed": false,
+    "location": {
+      "city": "Boston",
+      "display_address": [
+        "9 West St",
+        "Boston, MA 02111"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "9 West St",
+      "zip_code": "02111"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 32,
+    "name": "Wellesley Books",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/wellesley-books-wellesley?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 21806.28984956,
+    "coordinates": {
+      "latitude": 42.295859,
+      "longitude": -71.2973512
+    },
+    "phone": "+17814311160",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Y_agVLTxdYUa1NFfyNO36g/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(781) 431-1160",
+    "id": "wellesley-books-wellesley",
+    "is_closed": false,
+    "location": {
+      "city": "Wellesley",
+      "display_address": [
+        "82 Central St",
+        "Wellesley, MA 02482"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "82 Central St",
+      "zip_code": "02482"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 386,
+    "name": "Brookline Booksmith",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/brookline-booksmith-brookline?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 25839.176798399996,
+    "coordinates": {
+      "latitude": 42.3426523414632,
+      "longitude": -71.1219354340798
+    },
+    "phone": "+16175666660",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ZXbG3VqMIUSJAJAQkqjpzQ/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      },
+      {
+        "alias": "stationery",
+        "title": "Cards & Stationery"
+      }
+    ],
+    "display_phone": "(617) 566-6660",
+    "id": "brookline-booksmith-brookline",
+    "is_closed": false,
+    "location": {
+      "city": "Brookline",
+      "display_address": [
+        "279 Harvard St",
+        "Brookline, MA 02445"
+      ],
+      "country": "US",
+      "address2": null,
+      "address3": "",
+      "state": "MA",
+      "address1": "279 Harvard St",
+      "zip_code": "02445"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 55,
+    "name": "Commonwealth Books",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/commonwealth-books-boston?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 29001.8034862,
+    "coordinates": {
+      "latitude": 42.3574058711529,
+      "longitude": -71.0580448061228
+    },
+    "phone": "+16173386328",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/LK1FVV8DG8zlB1kjj4nc1Q/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(617) 338-6328",
+    "id": "commonwealth-books-boston",
+    "is_closed": false,
+    "location": {
+      "city": "Boston",
+      "display_address": [
+        "9 Spring Ln",
+        "Boston, MA 02109"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "9 Spring Ln",
+      "zip_code": "02109"
+    }
+  },
+  {
+    "rating": 5,
+    "review_count": 11,
+    "name": "Amazon Books",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/amazon-books-dedham?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$",
+    "distance": 12962.13291144,
+    "coordinates": {
+      "latitude": 42.2317776,
+      "longitude": -71.1772666
+    },
+    "phone": "+17813260585",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/rl2gXJ34IW1Wml8jrFeBDw/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      },
+      {
+        "alias": "coffee",
+        "title": "Coffee & Tea"
+      },
+      {
+        "alias": "electronics",
+        "title": "Electronics"
+      }
+    ],
+    "display_phone": "(781) 326-0585",
+    "id": "amazon-books-dedham",
+    "is_closed": false,
+    "location": {
+      "city": "Dedham",
+      "display_address": [
+        "246 Legacy Pl",
+        "Dedham, MA 02026"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": null,
+      "state": "MA",
+      "address1": "246 Legacy Pl",
+      "zip_code": "02026"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 299,
+    "name": "Harvard Book Store",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/harvard-book-store-cambridge?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 29176.181912559998,
+    "coordinates": {
+      "latitude": 42.37241,
+      "longitude": -71.11631
+    },
+    "phone": "+16176611515",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/DcTc46XtatGGwvxRFo3bJQ/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(617) 661-1515",
+    "id": "harvard-book-store-cambridge",
+    "is_closed": false,
+    "location": {
+      "city": "Cambridge",
+      "display_address": [
+        "1256 Massachusetts Ave",
+        "Cambridge, MA 02138"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "1256 Massachusetts Ave",
+      "zip_code": "02138"
+    }
+  },
+  {
+    "rating": 4,
+    "review_count": 97,
+    "name": "New England Mobile Book Fair",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/new-england-mobile-book-fair-newton-upper-falls?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$",
+    "distance": 21949.30626267,
+    "coordinates": {
+      "latitude": 42.3128203,
+      "longitude": -71.212411
+    },
+    "phone": "+16175275817",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/OmSg-VW7UucTwYf8f6zE3g/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(617) 527-5817",
+    "id": "new-england-mobile-book-fair-newton-upper-falls",
+    "is_closed": false,
+    "location": {
+      "city": "Newton Upper Falls",
+      "display_address": [
+        "241 Needham St",
+        "Newton Upper Falls, MA 02464"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "241 Needham St",
+      "zip_code": "02464"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 15,
+    "name": "Shire Bookshop",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/shire-bookshop-franklin?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$",
+    "distance": 18117.49749546,
+    "coordinates": {
+      "latitude": 42.07846,
+      "longitude": -71.40409
+    },
+    "phone": "+15085285665",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/IlIAJYanrlpypnO21r4WCw/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(508) 528-5665",
+    "id": "shire-bookshop-franklin",
+    "is_closed": false,
+    "location": {
+      "city": "Franklin",
+      "display_address": [
+        "305 Union St",
+        "Franklin, MA 02038"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "305 Union St",
+      "zip_code": "02038"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 48,
+    "name": "Symposium Books",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/symposium-books-providence?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$",
+    "distance": 37384.40010298,
+    "coordinates": {
+      "latitude": 41.8227253,
+      "longitude": -71.4125524
+    },
+    "phone": "+14012737900",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/wJtdib24g4QBiYpxzTv_fA/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(401) 273-7900",
+    "id": "symposium-books-providence",
+    "is_closed": false,
+    "location": {
+      "city": "Providence",
+      "display_address": [
+        "240 Westminster St",
+        "Providence, RI 02903"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "RI",
+      "address1": "240 Westminster St",
+      "zip_code": "02903"
+    }
+  },
+  {
+    "rating": 4,
+    "review_count": 31,
+    "name": "Newtonville Books",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/newtonville-books-newton-centre?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 23926.42470952,
+    "coordinates": {
+      "latitude": 42.3312057,
+      "longitude": -71.1938679
+    },
+    "phone": "+16172446619",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/SyqZFY1hqN8oILlVKu8Fmg/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(617) 244-6619",
+    "id": "newtonville-books-newton-centre",
+    "is_closed": false,
+    "location": {
+      "city": "Newton Centre",
+      "display_address": [
+        "10 Langley Rd",
+        "Newton Centre, MA 02459"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "10 Langley Rd",
+      "zip_code": "02459"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 55,
+    "name": "Cellar Stories",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/cellar-stories-providence?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 37462.66069784,
+    "coordinates": {
+      "latitude": 41.8228057,
+      "longitude": -71.414546
+    },
+    "phone": "+14015212665",
+    "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/W5eF8-UGfr5M5SIfUoUrzA/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(401) 521-2665",
+    "id": "cellar-stories-providence",
+    "is_closed": false,
+    "location": {
+      "city": "Providence",
+      "display_address": [
+        "111 Mathewson St",
+        "Providence, RI 02903"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "RI",
+      "address1": "111 Mathewson St",
+      "zip_code": "02903"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 59,
+    "name": "More Than Words Bookstore",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/more-than-words-bookstore-waltham-2?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$",
+    "distance": 28930.501677499997,
+    "coordinates": {
+      "latitude": 42.37375,
+      "longitude": -71.2392799
+    },
+    "phone": "+17817880035",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/KzdbtkB90dKKjAddwBN25g/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      },
+      {
+        "alias": "nonprofit",
+        "title": "Community Service/Non-Profit"
+      }
+    ],
+    "display_phone": "(781) 788-0035",
+    "id": "more-than-words-bookstore-waltham-2",
+    "is_closed": false,
+    "location": {
+      "city": "Waltham",
+      "display_address": [
+        "56 Felton St",
+        "Waltham, MA 02453"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "56 Felton St",
+      "zip_code": "02453"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 12,
+    "name": "Park Street Books",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/park-street-books-medfield?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 12270.268955004,
+    "coordinates": {
+      "latitude": 42.1858863830566,
+      "longitude": -71.3065872192383
+    },
+    "phone": "+15082423083",
+    "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/fJjU51QyUmxzMA_M6q33jA/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      },
+      {
+        "alias": "toys",
+        "title": "Toy Stores"
+      }
+    ],
+    "display_phone": "(508) 242-3083",
+    "id": "park-street-books-medfield",
+    "is_closed": false,
+    "location": {
+      "city": "Medfield",
+      "display_address": [
+        "504 Main St",
+        "Medfield, MA 02052"
+      ],
+      "country": "US",
+      "address2": null,
+      "address3": null,
+      "state": "MA",
+      "address1": "504 Main St",
+      "zip_code": "02052"
+    }
+  },
+  {
+    "rating": 4,
+    "review_count": 176,
+    "name": "Porter Square Books",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/porter-square-books-cambridge?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 31005.0696847,
+    "coordinates": {
+      "latitude": 42.389665952991,
+      "longitude": -71.11894500338
+    },
+    "phone": "+16174912220",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/F4LX2bWeutQLjPUROZ4Ntw/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(617) 491-2220",
+    "id": "porter-square-books-cambridge",
+    "is_closed": false,
+    "location": {
+      "city": "Cambridge",
+      "display_address": [
+        "25 White St",
+        "Porter Square Shopping Ctr",
+        "Cambridge, MA 02140"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "Porter Square Shopping Ctr",
+      "state": "MA",
+      "address1": "25 White St",
+      "zip_code": "02140"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 18,
+    "name": "The Blue Bunny",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/the-blue-bunny-dedham?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 14781.297051299998,
+    "coordinates": {
+      "latitude": 42.2482128,
+      "longitude": -71.1730007
+    },
+    "phone": "+17814936568",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/PBEHR1NTX5AcIoLtgzPBFA/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      },
+      {
+        "alias": "toys",
+        "title": "Toy Stores"
+      }
+    ],
+    "display_phone": "(781) 493-6568",
+    "id": "the-blue-bunny-dedham",
+    "is_closed": false,
+    "location": {
+      "city": "Dedham",
+      "display_address": [
+        "577 High St",
+        "Dedham, MA 02026"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "577 High St",
+      "zip_code": "02026"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 104,
+    "name": "Raven Used Books",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/raven-used-books-cambridge?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$",
+    "distance": 29337.558481059998,
+    "coordinates": {
+      "latitude": 42.37449,
+      "longitude": -71.11984
+    },
+    "phone": "+16174416999",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/-rqq4IJG3deaUEWewGQ7xg/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      },
+      {
+        "alias": "usedbooks",
+        "title": "Used Bookstore"
+      }
+    ],
+    "display_phone": "(617) 441-6999",
+    "id": "raven-used-books-cambridge",
+    "is_closed": false,
+    "location": {
+      "city": "Cambridge",
+      "display_address": [
+        "23 Church St",
+        "Cambridge, MA 02138"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "23 Church St",
+      "zip_code": "02138"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 14,
+    "name": "Papercuts J.P.",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/papercuts-j-p-boston-3?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 22816.78477952,
+    "coordinates": {
+      "latitude": 42.31296,
+      "longitude": -71.11361
+    },
+    "phone": "+16175223404",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/YX9ZA_sMz8tCBOjQrKH44g/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(617) 522-3404",
+    "id": "papercuts-j-p-boston-3",
+    "is_closed": false,
+    "location": {
+      "city": "Boston",
+      "display_address": [
+        "5 Green St",
+        "Boston, MA 02130"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": "",
+      "state": "MA",
+      "address1": "5 Green St",
+      "zip_code": "02130"
+    }
+  },
+  {
+    "rating": 4.5,
+    "review_count": 5,
+    "name": "Belmont Books",
+    "transactions": [],
+    "url": "https://www.yelp.com/biz/belmont-books-belmont?adjust_creative=3-P7Vz57L7f4_vIJv5mr6Q&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3-P7Vz57L7f4_vIJv5mr6Q",
+    "price": "$$",
+    "distance": 31413.169340579996,
+    "coordinates": {
+      "latitude": 42.3984718,
+      "longitude": -71.1742989
+    },
+    "phone": "+16179321496",
+    "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/XTU8sv9sjL9gPEhj3r2Ucg/o.jpg",
+    "categories": [
+      {
+        "alias": "bookstores",
+        "title": "Bookstores"
+      }
+    ],
+    "display_phone": "(617) 932-1496",
+    "id": "belmont-books-belmont",
+    "is_closed": false,
+    "location": {
+      "city": "Belmont",
+      "display_address": [
+        "79 Leonard St",
+        "Belmont, MA 02478"
+      ],
+      "country": "US",
+      "address2": "",
+      "address3": null,
+      "state": "MA",
+      "address1": "79 Leonard St",
+      "zip_code": "02478"
+    }
+  }
