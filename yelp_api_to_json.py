@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Yelp Fusion API code sample.
-
-This program demonstrates the capability of the Yelp Fusion API
-by using the Search API to query for businesses by a search term and location,
-and the Business API to query additional information about the top result
-from the search query.
-
-Please refer to http://www.yelp.com/developers/v3/documentation for the API
+Modified version of the Yelp Fusion API code available at https://github.com/Yelp/yelp-fusion. Please refer to http://www.yelp.com/developers/v3/documentation for the API
 documentation.
 
-This program requires the Python requests library, which you can install via:
+PLEASE BE AWARE that you will need to add your own API keys, available at https://www.yelp.com/developers/v3/manage_app
+
+The majority of our alternations are to export json responses from the API, so that another script can import them into 
+
+The original Yelp Fusion program requires the Python requests library, which you can install via:
 `pip install -r requirements.txt`.
 
 Sample usage of the program:
@@ -24,10 +21,11 @@ import pprint
 import requests
 import sys
 import urllib
+#we added these, all are not used in script. experimentation needed
 import re
 import csv 
 import urllib2
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
 
 
 # This client code can run on Python 2.x or 3.x.  Your imports can be
@@ -45,10 +43,10 @@ except ImportError:
 
 
 # OAuth credential placeholders that must be filled in by users.
-# You can find them on
+# You can find/generate them on
 # https://www.yelp.com/developers/v3/manage_app
-CLIENT_ID = '3-P7Vz57L7f4_vIJv5mr6Q'
-CLIENT_SECRET = 'pZr70wDzEgfsrOl75CmbzUBhhXbjleT5sWRooEKxu6eJkr7sWXy0MI224f5ZRNDg'
+CLIENT_ID = 'insert here'
+CLIENT_SECRET = 'insert here'
 
 
 # API constants, you shouldn't have to change these.
@@ -59,17 +57,16 @@ TOKEN_PATH = '/oauth2/token'
 GRANT_TYPE = 'client_credentials'
 
 
-#towns in MA
+#towns in Massachusetts, used to loop
 TOWNS_MA=['Abington','Acton','Acushnet','Adams','Agawam','Alford','Amesbury','Amherst','Andover','Aquinnah','Arlington','Ashburnham','Ashby','Ashfield','Ashland','Athol','Attleboro','Auburn','Avon','Ayer','Barnstable','Barre','Becket','Bedford','Belchertown', 'Bellingham','Belmont','Berkley','Berlin','Bernardston','Beverly','Billerica','Blackstone','Blandford','Bolton','Boston', 'Bourne', 'Boxborough','Boxford','Boylston','Braintree','Brewster','Bridgewater','Brimfield','Brockton','Brookfield','Brookline','Buckland','Burlington','Cambridge','Canton','Carlisle', 'Carver','Charlemont','Charlton','Chatham','Chelmsford','Chelsea','Cheshire','Chester','Chesterfield','Chicopee','Chilmark','Clarksburg','Clinton','Cohasset','Colrain','Concord','Conway','Cummington','Dalton','Danvers','Dartmouth','Dedham','Deerfield','Dennis','Dighton','Douglas','Dover','Dracut','Dudley','Dunstable','Duxbury','East Bridgewater','East Brookfield','East Longmeadow','Eastham','Easthampton','Easton','Edgartown','Egremont','Erving','Essex','Everett','Fairhaven','Fall River','Falmouth','Fitchburg','Florida','Foxborough','Framingham','Franklin','Freetown','Gardner','Georgetown','Gill','Gloucester','Goshen','Gosnold','Grafton','Granby','Granville','Great Barrington','Greenfield','Groton','Groveland','Hadley','Halifax','Hamilton','Hampden','Hancock','Hanover','Hanson','Hardwick','Harvard','Harwich','Hatfield','Haverhill','Hawley','Heath','Hingham','Hinsdale','Holbrook','Holden','Holland','Holliston','Holyoke','Hopedale','Hopkinton','Hubbardston','Hudson','Hull','Huntington','Ipswich','Kingston','Lakeville','Lancaster','Lanesborough','Lawrence','Lee','Leicester','Lenox','Leominster','Leverett','Lexington','Leyden','Lincoln','Littleton','Longmeadow','Lowell','Ludlow','Lunenburg','Lynn','Lynnfield','Malden','Manchester-by-the-Sea','Mansfield','Marblehead','Marion','Marlborough','Marshfield','Mashpee','Mattapoisett','Maynard','Medfield','Medford','Medway','Melrose','Mendon','Merrimac','Methuen','Middleborough','Middlefield','Middleton','Milford','Millbury','Millis','Millville','Milton','Monroe','Monson','Montague','Monterey','Montgomery','Mount Washington','Nahant','Nantucket','Natick','Needham','New Ashford','New Bedford','New Braintree','New Marlborough','New Salem','Newbury','Newburyport','Newton','Norfolk','North Adams','North Andover','North Attleborough','North Brookfield','North Reading','Northampton','Northborough','Northbridge','Northfield','Norton','Norwell','Norwood','Oak Bluffs','Oakham','Orange','Orleans','Otis','Oxford','Palmer','Paxton','Peabody','Pelham','Pembroke','Pepperell','Peru','Petersham','Phillipston','Pittsfield','Plainfield','Plainville','Plymouth','Princeton','Provincetown','Quincy','Randolph','Raynham','Reading','Rehoboth','Revere','Richmond','Rochester','Rockland','Rockport','Rowe','Rowley','Royalston','Russell','Rutland','Salem','Salisbury','Sandisfield','Sandwich','Saugus','Savoy','Scituate','Seekonk','Sharon','Sheffield','Shelburne','Sherborn','Shirley','Shrewsbury','Shutesbury','Somerset','Somerville','South Hadley','Southampton','Southborough','Southbridge','Southwick','Spencer','Springfield','Sterling','Stockbridge','Stoneham','Stoughton','Stow','Sturbridge','Sudbury','Sunderland','Sutton','Swampscott','Swansea','Taunton','Templeton','Tewksbury','Tisbury','Tolland','Topsfield','Townsend','Truro','Tyngsborough','Tyringham','Upton','Uxbridge','Wakefield','Wales','Walpole','Waltham','Ware','Wareham','Warren','Warwick','Washington','Watertown','Wayland','Webster','Wellesley','Wellfleet','Wendell','Wenham','West Boylston','West Bridgewater','West Brookfield','West Newbury','West Springfield ','West Stockbridge','West Tisbury','Westborough','Westfield','Westford','Westhampton','Westminster','Weston','Westport','Westwood','Weymouth','Whately','Whitman','Wilbraham ','Williamsburg','Williamstown','Wilmington','Winchendon','Winchester','Windsor','Winthrop','Woburn','Worcester','Worthington','Wrentham','Yarmouth']
-
 
 
 # Defaults for our simple example.
 DEFAULT_TERM = 'comics'
-DEFAULT_LOCATION = 'Sharon, MA'
+DEFAULT_LOCATION = 'Sharon, MA' #note the importance of state for accuracy
 SEARCH_LIMIT = 45 #default=20, max=50
-DEFAULT_CATEGORIES = 'comicstore'
-RADIUS= 0
+DEFAULT_CATEGORIES = 'comicstore' #find more at https://www.yelp.com/developers/documentation/v3/all_category_list
+RADIUS= 15000 #API uses meters for radius
 
 
 
@@ -186,9 +183,12 @@ def query_api(term, location, categories, radius):
         print(u'No businesses for {0} in {1} found.'.format(term, location))
         return
 
-    with open('output_comicsMA.json', 'a') as outfile:
+    #modified to create or append to a JSON file. used later to insert into SQLite database
+    #all the same format, but can modify filename per type of search
+    with open('output_yelp.json', 'a') as outfile:
         json.dump(businesses, outfile)
 
+    #commented out the below, unnecessary for our purposes
     # business_id = businesses[0]['id']
 
     # print(u'{0} businesses found, querying business info ' \
@@ -218,7 +218,8 @@ def main():
  
 
     input_values = parser.parse_args()
-    
+
+    #altered to allow a loop for all of the Massachusetts towns
     for x in TOWNS_MA:
         location=x+', MA'
         print(location)
