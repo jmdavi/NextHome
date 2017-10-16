@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 
-# Initial code for SI 601 F15 Hoemwork 4 Part 2
+"""
+Work-in-progress
+Google Maps API - Place Search
+Uses dictionary of Town_MA latitudes and longitudes created by Google_Geolocate.py file to define starting location
+Finds Places within radius of lat,long values
+Stores in memory before insert into SQLite database
+Could return GB's of JSON for long list of towns/locations, be wary of running too many at once
+"""
 
 from urllib2 import Request, urlopen, URLError
 import json
@@ -71,8 +78,9 @@ for town in locations:
         except URLError, e:
             print 'Failed at getting any results for Town/City. Got an error code:', e
 
-with sqlite.connect('yelp_database.db') as con:
+with sqlite.connect('NextHome_database.db') as con:
     cur = con.cursor()
+    #Destructive refresh if the next two lines are not commented out
     cur.execute("DROP TABLE IF EXISTS google_places")
     cur.execute("CREATE TABLE google_places(name TEXT, rating REAL, formatted_address TEXT, store_types TEXT, city TEXT, place_id INTEGER)")
     cur.executemany( "INSERT INTO google_places(name, rating, formatted_address, store_types, city, place_id) VALUES (?,?,?,?,?,?)", table_rows)
