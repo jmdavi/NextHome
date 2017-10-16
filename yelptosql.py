@@ -1,18 +1,27 @@
 import sqlite3 as sqlite
 import json, sys
 
-#input = open('output_bookssharon2.json', 'rU')
+#takes JSON output from Yelp API and inserts into SQLite database
+
+#below assumes one list, but you may have a list of lists of JSON data
+#therefore, you may need to alter the JSON file by replacing the string '][' with a comma ','
+#(untested)
+#with open('output_yelp.json') as f:
+#    newText=f.read().replace('][', ',')
+#with open('output_yelp.json', "w") as f:
+#    f.write(newText)
+
 
 table_rows=[]
 
-with open('output_booksMA.json') as json_data:
+with open('output_yelp.json') as json_data:
     listOfJSON = json.load(json_data)
     for shop in listOfJSON:
     	#print shop
     	name= shop['name']
     	rating= shop['rating']
     	review_count= shop['review_count']
-    	try: #we find that sometimes this field doesn't exist
+    	try: #we find that sometimes this field doesn't exist. Should be dollar signs, e.g., '$$'
     		price= shop['price']
     	except: price='N/A'
     	latitude= shop['coordinates']['latitude']
@@ -34,24 +43,14 @@ with open('output_booksMA.json') as json_data:
 
 with sqlite.connect('yelp_database.db') as con: 
 	cur = con.cursor()
-
-	#Genre Table
-	cur.execute("DROP TABLE IF EXISTS shops")
-	cur.execute("CREATE TABLE shops(name TEXT, rating REAL, review_count INTEGER, price TEXT, latitude REAL, longitude REAL, address TEXT, city TEXT, categories TEXT )")
+	#Uncomment next lines if you want to do destructive refreshes of Yelp data
+	#cur.execute("DROP TABLE IF EXISTS shops")
+	#cur.execute("CREATE TABLE shops(name TEXT, rating REAL, review_count INTEGER, price TEXT, latitude REAL, longitude REAL, address TEXT, city TEXT, categories TEXT )")
 	cur.executemany( "INSERT INTO shops (name, rating, review_count, price,latitude,longitude,address,city,categories) VALUES (?,?,?,?,?,?,?,?,?)", table_rows)
 
 
-#SQLITE code to be run afterwards
+#SQL code to dedupe JSON afterwards (almost certainly necessary)
 #CREATE TABLE shops_distinct AS
 #SELECT DISTINCT * FROM shops
-
-#SELECT City, count(name), GROUP_CONCAT(name,','),review_count, avg(rating)
-#FROM shops_distinct
-#GROUP BY City
-#ORDER BY avg(rating) DESC, count(name)DESC, review_count DESC
-
-
-
-
 
 	
