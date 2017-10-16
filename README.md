@@ -29,7 +29,7 @@ To run the code without specifying any arguments (thereby utilizing the DEFAULT 
 `python sample.py`. Alternatively, run the code sample by specifying the optional arguments:
 `python sample.py --term="bars" --location="San Francisco, CA"`
 
-Specifically, we've used the following files to pull information `python yelp_scrape_comics.py` etc.
+Specifically, we've used the following files to pull information `python yelp_api_to_json.py` with optional parameters.
 Then to get into SQLite database use `python yelptosql.py`.
 
 ## Gathering from Google Distance Matrix API
