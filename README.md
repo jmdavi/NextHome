@@ -35,3 +35,4 @@ Then to get into SQLite database use `python yelptosql.py`.
 ## Gathering from Google Distance Matrix API
 The first API calls we made were to determine how long morning commutes would be, via the Distance Matrix API. Just run `python Google_Distance_Matrix_API.py` to compile for all towns in MA against the target destination (Boston) to arrive by 8 a.m. It would definitely be possible to generalize the code and accept command-line inputs.
 
+The next two files work in tandem to find Places of interest via the Place Search API. First `python Google_Geolocate.py` runs through the Towns list for MA to generate latitude and longitude, then `python Google_places_by_town.py` does API calls first for placeids for Places of Interest then finds details about the business with additional searches.
