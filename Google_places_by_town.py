@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 """
-Work-in-progress
 Google Maps API - Place Search
 Uses dictionary of Town_MA latitudes and longitudes created by Google_Geolocate.py file to define starting location
 Finds Places within radius of lat,long values
